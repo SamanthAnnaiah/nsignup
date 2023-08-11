@@ -51,6 +51,9 @@ div.div_1 {
     div.c2, div.c3 {
         font-family: $ffamily2; 
     }
+    #ivemail {
+        display: none;
+    }
 }
 .div_2 {
     align-self: center;
@@ -81,6 +84,8 @@ input {
     border: 0.2px groove rgba(128, 128, 128, 0.571);
 }
 
+
+
 button {
     padding: 12px;
     background-color: $DSGrey;
@@ -88,8 +93,49 @@ button {
     font-family: $ffamily1;
     width: 355px;
     border-radius: 10px;
-
+    transition: width 1s, background-color 1s;
 }
-button:hover {
+button#bton:hover {
+    cursor: pointer;
+    width: 367px;
+    background-color: $CGrey2;
+}
+
+button#bdis {
+    width: 100px;
+}
+button#bdis:hover {
     cursor: pointer;
 }
+
+
+div.popup {
+    font-family: $ffamily1;
+    z-index: 10;
+    position: fixed;
+    top: 10%;
+    left: 34%;
+    width: 400px;
+    height: 360px;
+    display: none;
+    flex-direction: column;
+    justify-content: left;
+    background-color: $CGrey3;
+    border: 8px groove black;
+    border-radius: 15px;
+    div {
+        margin: 15px;
+    }
+}
+
+div.c1 {
+    font-size: 20px;
+}
+div.c2, div.c3 {
+    font-family: $ffamily2; 
+}
+
+.blur {
+    filter: blur(5px);
+  }
+  

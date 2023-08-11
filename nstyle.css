@@ -48,6 +48,9 @@ div.div_1 div.c1 {
 div.div_1 div.c2, div.div_1 div.c3 {
   font-family: Roboto-Regular;
 }
+div.div_1 #ivemail {
+  display: none;
+}
 
 .div_2 {
   align-self: center;
@@ -85,8 +88,50 @@ button {
   font-family: Roboto-Bold;
   width: 355px;
   border-radius: 10px;
+  transition: width 1s, background-color 1s;
 }
 
-button:hover {
+button#bton:hover {
   cursor: pointer;
+  width: 367px;
+  background-color: hsl(235, 68%, 48%);
+}
+
+button#bdis {
+  width: 100px;
+}
+
+button#bdis:hover {
+  cursor: pointer;
+}
+
+div.popup {
+  font-family: Roboto-Bold;
+  z-index: 10;
+  position: fixed;
+  top: 10%;
+  left: 34%;
+  width: 400px;
+  height: 360px;
+  display: none;
+  flex-direction: column;
+  justify-content: left;
+  background-color: hsla(200, 68%, 48%, 0.959);
+  border: 8px groove black;
+  border-radius: 15px;
+}
+div.popup div {
+  margin: 15px;
+}
+
+div.c1 {
+  font-size: 20px;
+}
+
+div.c2, div.c3 {
+  font-family: Roboto-Regular;
+}
+
+.blur {
+  filter: blur(5px);
 }/*# sourceMappingURL=nstyle.css.map */

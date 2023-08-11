@@ -47,10 +47,13 @@
             <label for="itext">Email address</label>
           </div>
           <div>
-            <input type="text" name="itext" size="45" id="itext" placeholder="email@company.com">
+            <label id="ivemail">Invalid email address</label>
           </div>
           <div>
-            <button type="button">Subscribe to monthly </button>
+            <input type="text" name="itext" size="45" id="itext" placeholder="email@company.com" autocomplete="on">
+          </div>
+          <div>
+            <button type="button" id="bton">Subscribe to monthly </button>
           </div>
         </div>
         <div class="div_2">
@@ -61,6 +64,24 @@
           />
         </div>
       </div>
+
     </div>
+
+    <div class="popup">
+      <div>
+        <img src="./assets/images/icon-list.svg" width="90px" height="90px" alt="iconList">  
+      </div>
+      <div class="c c1">
+        Thanks for subscribing!
+      </div>
+      <div class="c c2">
+        A confirmation email has been sent to <span id="eemail"></span>. Please open it 
+        and click the button inside to confirm your subscription. 
+      </div>
+      <div>
+        <button type="button" id="bdis">Dismiss message</button>
+      </div>
+    </div>
+    
   </body>
 </html>
