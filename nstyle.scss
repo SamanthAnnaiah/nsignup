@@ -22,8 +22,8 @@ body {
 .main_div {
     @include bradius($bradius);
     background-color: $white;
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 60%;
 }
 
 .sub_div {
@@ -34,16 +34,22 @@ body {
     height: 100%;
 }
 
-.div_1 {
-    font-family: $ffamily2;
+div.div_1 {
+    font-family: $ffamily1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    .div_11 {
-        margin: 10 0px;
+    align-self: center;
+    div {
+        margin-top: 20px;
+        margin-left: 50px;
+        width: 80%;
     }
-    .main_h {
-        font-family: $ffamily1;
+    div.c1 {
+        font-size: 62px;
+    }
+    div.c2, div.c3 {
+        font-family: $ffamily2; 
     }
 }
 .div_2 {
@@ -52,4 +58,38 @@ body {
         margin: 20px;
         height: 440px;
     }
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+label {
+    font-size: small;
+    font-weight: bolder;
+}
+
+input {
+    padding: 13px;
+    border-radius: 10px;
+    border: 0.2px groove rgba(128, 128, 128, 0.571);
+}
+
+button {
+    padding: 12px;
+    background-color: $DSGrey;
+    color: white;
+    font-family: $ffamily1;
+    width: 355px;
+    border-radius: 10px;
+
+}
+button:hover {
+    cursor: pointer;
 }

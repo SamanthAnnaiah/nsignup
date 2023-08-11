@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Newsletter sign-up form with success message</title>
-  <script src="nsigner.js" defer></script>
-  <link rel="stylesheet" href="nstyle.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Newsletter sign-up form with success message</title>
+    <script src="nsigner.js" defer></script>
+    <link rel="stylesheet" href="nstyle.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="main_div">
-    <div class="sub_div">
-      <div class="div_1">
-        <div class="div_11">
-          <div class="main_h">
-              Stay Updated!
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_div">
+      <div class="sub_div">
+        <div class="div_1">
+          <div class="c c1">Stay updated!</div>
+          <div class="c c2">Join 60,000+ product managers receiving monthly updates on:</div>
+          <div class="c c3">
+            <ul>
+              <li>
+                <img src="./assets/images/icon-list.svg" alt="iconList"> Product discovery and building what matters
+              </li>
+              <li>
+                <img src="./assets/images/icon-list.svg" alt="iconList"> Measuring to ensure updates are a success 
+              </li>
+              <li>
+                <img src="./assets/images/icon-list.svg" alt="iconList"> And much more! 
+              </li>
+            </ul>
           </div>
           <div>
-            Join 60,00+ product managers receiving monthly updates on:
+            <label for="itext">Email address</label>
+          </div>
+          <div>
+            <input type="text" name="itext" size="45" id="itext" placeholder="email@company.com">
+          </div>
+          <div>
+            <button type="button">Subscribe to monthly </button>
           </div>
         </div>
-      </div>
-      <div class="div_2">
-        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="imgg" srcset="">
+        <div class="div_2">
+          <img
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt="imgg"
+            srcset=""
+          />
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

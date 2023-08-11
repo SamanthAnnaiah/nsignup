@@ -18,8 +18,8 @@ body {
 .main_div {
   border-radius: 20px;
   background-color: hsl(0, 0%, 100%);
-  height: 80%;
-  width: 80%;
+  height: 90%;
+  width: 60%;
 }
 
 .sub_div {
@@ -30,17 +30,23 @@ body {
   height: 100%;
 }
 
-.div_1 {
-  font-family: Roboto-Regular;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.div_1 .div_11 {
-  margin: 10 0px;
-}
-.div_1 .main_h {
+div.div_1 {
   font-family: Roboto-Bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+}
+div.div_1 div {
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 80%;
+}
+div.div_1 div.c1 {
+  font-size: 62px;
+}
+div.div_1 div.c2, div.div_1 div.c3 {
+  font-family: Roboto-Regular;
 }
 
 .div_2 {
@@ -49,4 +55,38 @@ body {
 .div_2 img {
   margin: 20px;
   height: 440px;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+label {
+  font-size: small;
+  font-weight: bolder;
+}
+
+input {
+  padding: 13px;
+  border-radius: 10px;
+  border: 0.2px groove rgba(128, 128, 128, 0.571);
+}
+
+button {
+  padding: 12px;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-family: Roboto-Bold;
+  width: 355px;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=nstyle.css.map */
